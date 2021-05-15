@@ -1,0 +1,298 @@
+:root {
+  font-size: 62.5%;
+}
+
+html,
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+body {
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: #0c2d48;
+}
+
+.wrapper .not-to-fancy {
+  width: 70%;
+  background: brown;
+}
+
+.wrapper .not-to-fancy h3 {
+  font-size: 1.6rem;
+}
+
+main {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60rem;
+  color: #b1d4e0;
+}
+
+main p {
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+main h2 {
+  margin-bottom: 4rem;
+}
+
+.modal-wrapper {
+  background: rgba(50, 50, 51, 0.986);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 40rem;
+  height: 40rem;
+  border-radius: 12px;
+  font-size: 1.6rem;
+  color: #e6e6e6;
+  padding: 3rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #181818;
+}
+
+.volume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0.5px solid rgba(211, 211, 211, 0.514);
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+}
+
+.volume .volume-icon {
+  background-color: #591abe;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 2rem;
+}
+
+.volume .sound {
+  width: 100%;
+}
+
+.volume .sound input[type="range"] {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.volume .sound .labels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0.5px solid rgba(211, 211, 211, 0.514);
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+}
+
+.chat .chat-labels {
+  width: 80%;
+}
+
+.chat .chat-labels p {
+  font-weight: 200;
+  font-size: 1.2rem;
+  color: #aaaaaa;
+}
+
+.chat .chat-icon {
+  background-color: #46f0f0;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 2rem;
+}
+
+.buttons-wrapper {
+  background-color: #262627;
+  height: 7rem;
+  width: calc(100% + 6rem);
+  margin-left: -3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.buttons-wrapper span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buttons-wrapper span img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.buttons-wrapper .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo {
+  height: 9rem;
+  width: 100%;
+}
+
+.logo p {
+  margin-bottom: 1rem;
+  color: #838383;
+}
+
+.logo .fakeInput {
+  background: #2a2a2a;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  border-radius: 9px;
+  border-bottom: 2px solid #414141;
+}
+
+.logo .fakeInput span {
+  color: #c7c7c7;
+  font-size: 1.3rem;
+}
+
+.logo .download-button {
+  background-color: #414141;
+  height: 85%;
+  width: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+}
+
+.logo .download-button img {
+  -webkit-filter: brightness(0) invert(0.6);
+          filter: brightness(0) invert(0.6);
+}
+
+.logo span {
+  color: #858585;
+}
+
+.btn {
+  width: 8rem;
+  height: 4rem;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #e6e6e6;
+  margin-right: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.cancel {
+  background-color: rgba(50, 50, 51, 0.986);
+  color: #b4b2b2;
+}
+
+.save {
+  background-color: #591abe;
+}
+
+#reactlogo {
+  position: absolute;
+  top: -150px;
+  right: -200px;
+  width: 600px;
+}
+/*# sourceMappingURL=app.css.map */
